@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paginação</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <section id="controlList">
+      <div class="options">
+        <button id="optionButton" onclick="obj.openTab()">
+          Option
+        </button>
+        <div class="box" >
+          <select id="letter" onChange="obj.changeLetter()">
+            <option value="" selected disabled hidden>Dropdown</option>
+            <option value="A">A</option>
+            <option value="B">B</option>
+          </select>
+        </div>
+        <div class="quantityItems">
+          <p>Quantify</p>
+          <select id="quantify" onChange="obj.quantifyList()">
+            <option value="" selected disabled hidden>Type Here</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+        </div>
+      </div>
+    </section>
+  
+    <section id="paginate">
+      <div class="list">
+      </div>
+      <div class="pagination">
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+      </div>
+    </section>
+  </div>
+  
+   <script src="js/script.js"></script>
+  </body>
+</html>
